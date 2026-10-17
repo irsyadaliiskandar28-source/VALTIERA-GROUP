@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VALTIERA GROUP — Building a Stronger Tomorrow">
+    <title>Divisions | VALTIERA GROUP</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .division-card {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+            min-height: 260px
+        }
+
+        .division-card:hover,
+        .division-card:focus-visible {
+            transform: translateY(-7px);
+            border-color: #b9954f;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, .13);
+            outline: none
+        }
+
+        .division-logo {
+            width: 76px;
+            height: 76px;
+            border: 1px solid rgba(185, 149, 79, .65);
+            border-radius: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            margin: 16px 0 20px;
+            background: linear-gradient(145deg, rgba(185, 149, 79, .18), rgba(12, 32, 50, .05));
+            color: #b9954f;
+            box-shadow: inset 0 0 0 5px rgba(185, 149, 79, .06)
+        }
+
+        .division-logo .logo-glyph {
+            font-size: 30px;
+            line-height: 1
+        }
+
+        .division-logo small,
+        .hc-brandmark small {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px
+        }
+
+        .division-cta {
+            display: inline-block;
+            margin-top: 12px;
+            color: #b9954f;
+            font-weight: 700;
+            font-size: 13px
+        }
+
+        .hc-brandmark {
+            width: 82px;
+            height: 82px;
+            border-radius: 24px;
+            background: linear-gradient(145deg, #102b43, #071523);
+            border: 1px solid #b9954f;
+            color: #d7b66d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, .18)
+        }
+
+        .hc-brandmark span {
+            font-size: 31px;
+            line-height: 1
+        }
+
+        .hc-dialog {
+            text-align: center
+        }
+
+        .hc-list {
+            text-align: left
+        }
+
+        .hc-row {
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+
+        .hc-index {
+            color: #b9954f;
+            font-weight: 800
+        }
+
+        .hc-row small {
+            display: block;
+            opacity: .65;
+            margin-top: 4px
+        }
+
+        @media(max-width:640px) {
+            .division-card {
+                min-height: 230px
+            }
+
+            .division-logo {
+                width: 66px;
+                height: 66px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="wrap nav"><a class="brand" href="index.html">NOVA<span>CREST</span> CORPORATION</a>
+        <nav class="navlinks"><a href="index.html">Home</a><a href="about.html">About</a><a
+                href="divisions.html">Divisions</a><a href="partnership.html">Partnership</a><a
+                href="careers.html">Careers</a><a href="contact.html">Contact</a></nav>
+    </header>
+    <main>
+        <section class="pagehead">
+            <div class="wrap">
+                <div class="eyebrow">Our Business</div>
+                <h1>Divisi Perusahaan</h1>
+                <p class="lead">Bidang usaha yang saling mendukung dalam satu ekosistem.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="wrap">
+                <div class="grid">
+                    <!-- 01. MARKETING DIVISION -->
+                    <article class="card division-card"
+                        tabindex="0"
+                        role="button"
+                        data-division="Marketing"
+                        data-hc="Division Director|Manager|Supervisor">
+                    
+                        <div class="num">01 / MARKETING</div>
+                    
+                        <div class="division-logo">
+                            <img
+                                src="Markerting.png"
+                                alt="Marketing Division Logo"
+                                class="division-image"
+                            >
+                        </div>
+                    
+                        <h3>Marketing</h3>
+                    
+                        <p>
+                            Strategi promosi, komunikasi, dan pengembangan relasi bisnis.
+                        </p>
+                    
+                        <span class="division-cta">
+                            Lihat HC Divisi ↗
+                        </span>
+                    
+                    </article>
+                    <!-- 02. RENTAL DIVISION -->
+                    <article class="card division-card"
+                        tabindex="0"
+                        role="button"
+                        data-division="Rental"
+                        data-hc="Division Director|Manager|Supervisor">
+                    
+                        <div class="num">02 / RENTAL</div>
+                    
+                        <div class="division-logo">
+                            <img
+                                src="Markerting.png"
+                                alt="Rental Division Logo"
+                                class="division-image"
+                            >
+                        </div>
+                    
+                        <h3>Rental</h3>
+                    
+                        <p>
+                            Layanan penyewaan dan pengelolaan aset.
+                        </p>
+                    
+                        <span class="division-cta">
+                            Lihat HC Divisi ↗
+                        </span>
+                    
+                    </article>
+                    <!-- 03. AUTOMOTIVE DIVISION -->
+                    <article class="card division-card"
+                        tabindex="0"
+                        role="button"
+                        data-division="Automotive"
+                        data-hc="Division Director|Manager|Supervisor">
+                    
+                        <div class="num">03 / AUTOMOTIVE</div>
+                    
+                        <div class="division-logo">
+                            <img
+                                src="Markerting.png"
+                                alt="Automotive Division Logo"
+                                class="division-image"
+                            >
+                        </div>
+                    
+                        <h3>Automotive</h3>
+                    
+                        <p>
+                            Solusi dan layanan sektor otomotif.
+                        </p>
+                    
+                        <span class="division-cta">
+                            Lihat HC Divisi ↗
+                        </span>
+                    
+                    </article>
+                    <!-- 04. TRUCKER DIVISION -->
+                    <article class="card division-card"
+                        tabindex="0"
+                        role="button"
+                        data-division="Trucker"
+                        data-hc="Division Director|Manager|Supervisor">
+                    
+                        <div class="num">04 / TRUCKER</div>
+                    
+                        <div class="division-logo">
+                            <img
+                                src="Markerting.png"
+                                alt="Trucker Division Logo"
+                                class="division-image"
+                            >
+                        </div>
+                    
+                        <h3>Trucker</h3>
+                    
+                        <p>
+                            Operasional angkutan dan dukungan logistik.
+                        </p>
+                    
+                        <span class="division-cta">
+                            Lihat HC Divisi ↗
+                        </span>
+                    
+                    </article>
+                    <!-- 05. BUILDER DIVISION -->
+                    <article class="card division-card"
+                        tabindex="0"
+                        role="button"
+                        data-division="builder"
+                        data-hc="Division Director|Manager|Supervisor">
+                    
+                        <div class="num">05 / BUILDER</div>
+                    
+                        <div class="division-logo">
+                            <img
+                                src="Markerting.png"
+                                alt="builder Division Logo"
+                                class="division-image"
+                            >
+                        </div>
+                    
+                        <h3>Builder</h3>
+                    
+                        <p>
+                            Pengembangan konstruksi dan proyek pembangunan.
+                        </p>
+                    
+                        <span class="division-cta">
+                            Lihat HC Divisi ↗
+                        </span>
+                    
+                    </article>
+                    <!-- 06. CROSS DIVISION -->
+                    <article class="card division-card"
+                        tabindex="0"
+                        role="button"
+                        data-division="Cross"
+                        data-hc="Division Director|Manager|Supervisor">
+                    
+                        <div class="num">06 / CROSS DIVISION</div>
+                    
+                        <div class="division-logo">
+                            <img
+                                src="Markerting.png"
+                                alt="Cross Division Logo"
+                                class="division-image"
+                            >
+                        </div>
+                    
+                        <h3>Cross Divison</h3>
+                    
+                        <p>
+                            Kolaborasi antarunit untuk menciptakan nilai tambah.
+                        </p>
+                    
+                        <span class="division-cta">
+                            Lihat HC Divisi ↗
+                        </span>
+                    
+                    </article>
+                </div>
+            </div>
+        </section>
+        <div class="hc-modal" id="hcModal" aria-hidden="true">
+            <div class="hc-backdrop" data-close></div>
+            <section class="hc-dialog" role="dialog" aria-modal="true" aria-labelledby="hcTitle"><button
+                    class="hc-close" type="button" aria-label="Tutup" data-close>×</button>
+                <div class="hc-brandmark" id="hcBrandmark"><span>✦</span><small>NC</small></div>
+                <div class="eyebrow">Division Leadership</div>
+                <h2 id="hcTitle">HC Division</h2>
+                <p class="hc-intro">Struktur High Command divisi.</p>
+                <div class="hc-list" id="hcList"></div>
+                <p class="hc-note">Nama pemegang jabatan dapat diperbarui sesuai susunan organisasi VALTIERA GROUP.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrap">© <span data-year>2026</span> VALTIERA GROUP · Building a Stronger Tomorrow.</div>
+    </footer>
+    <script src="assets/script.js"></script>
+    <script>const modal = document.getElementById("hcModal"), title = document.getElementById("hcTitle"), list = document.getElementById("hcList"), brandmark = document.getElementById("hcBrandmark"); function openHC(card) { title.textContent = "HC — " + card.dataset.division; brandmark.innerHTML = card.querySelector(".division-logo").innerHTML; list.innerHTML = card.dataset.hc.split("|").map((role, i) => `<div class="hc-row"><span class="hc-index">0${i + 1}</span><div><strong>${role}</strong><small>Belum ditetapkan</small></div></div>`).join(""); modal.classList.add("open"); modal.setAttribute("aria-hidden", "false"); document.body.classList.add("modal-open") } document.querySelectorAll(".division-card").forEach(card => { card.addEventListener("click", () => openHC(card)); card.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openHC(card) } }) }); document.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", () => { modal.classList.remove("open"); modal.setAttribute("aria-hidden", "true"); document.body.classList.remove("modal-open") })); document.addEventListener("keydown", e => { if (e.key === "Escape") { modal.classList.remove("open"); modal.setAttribute("aria-hidden", "true"); document.body.classList.remove("modal-open") } });</script>
+</body>
+
+</html>

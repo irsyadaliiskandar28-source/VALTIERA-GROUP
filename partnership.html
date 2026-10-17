@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jaringan kemitraan VALTIERA GROUP.">
+    <title>Partnership | VALTIERA GROUP</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        :root {
+            --ink: #071321;
+            --navy: #0b2034;
+            --gold: #d8b66c;
+            --cream: #f7f5ef;
+            --line: rgba(216, 182, 108, .25)
+        }
+
+        .partnership-hero {
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            padding: 105px 0 95px;
+            background: radial-gradient(ellipse at 80% 45%, rgba(213, 176, 91, .22), transparent 28%), radial-gradient(ellipse at 12% 5%, rgba(62, 111, 146, .35), transparent 38%), linear-gradient(125deg, #06111f, #0d2942 70%, #173c55)
+        }
+
+        .partnership-hero:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 520px;
+            height: 520px;
+            border: 1px solid rgba(216, 182, 108, .16);
+            border-radius: 50%;
+            right: -100px;
+            top: -150px;
+            box-shadow: 0 0 0 35px rgba(216, 182, 108, .025), 0 0 0 85px rgba(216, 182, 108, .02)
+        }
+
+        .partnership-hero:after {
+            content: "N";
+            position: absolute;
+            z-index: -1;
+            right: 8%;
+            top: -100px;
+            font-size: clamp(260px, 36vw, 500px);
+            line-height: 1;
+            font-weight: 900;
+            color: rgba(255, 255, 255, .025);
+            font-family: Georgia, serif
+        }
+
+        .partnership-hero .wrap {
+            position: relative
+        }
+
+        .partnership-hero h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(48px, 8vw, 92px);
+            font-weight: 500;
+            letter-spacing: -2px;
+            line-height: .99;
+            max-width: 850px;
+            margin: 22px 0
+        }
+
+        .partnership-hero h1 span {
+            color: var(--gold);
+            font-style: italic
+        }
+
+        .partnership-hero p {
+            max-width: 620px;
+            color: #c6d2dc;
+            font-size: 17px;
+            line-height: 1.85
+        }
+
+        .hero-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: #e5cc91;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase
+        }
+
+        .hero-kicker:before {
+            content: "";
+            width: 36px;
+            height: 1px;
+            background: var(--gold)
+        }
+
+        .partner-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 30px
+        }
+
+        .partner-actions .btn {
+            margin: 0
+        }
+
+        .partner-actions .btn:first-child {
+            box-shadow: 0 10px 30px rgba(216, 182, 108, .17)
+        }
+
+        .partner-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            margin-top: 34px
+        }
+
+        .type-card {
+            position: relative;
+            overflow: hidden;
+            padding: 30px 30px 28px;
+            border: 1px solid #e5dfd1;
+            border-radius: 16px;
+            background: linear-gradient(145deg, #fff, #f7f4ed);
+            box-shadow: 0 16px 42px rgba(15, 30, 45, .055);
+            transition: transform .25s, box-shadow .25s
+        }
+
+        .type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 22px 48px rgba(15, 30, 45, .11)
+        }
+
+        .type-card:after {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 1px solid rgba(159, 125, 57, .12);
+            border-radius: 50%;
+            right: -55px;
+            bottom: -70px;
+            box-shadow: 0 0 0 18px rgba(159, 125, 57, .035)
+        }
+
+        .type-card .type-icon {
+            width: 50px;
+            height: 50px;
+            display: grid;
+            place-items: center;
+            border-radius: 15px;
+            background: #132d43;
+            color: #e0c27d;
+            font-size: 23px;
+            box-shadow: 0 8px 18px rgba(8, 25, 42, .15)
+        }
+
+        .type-card h3 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            font-weight: 500;
+            color: #17283a;
+            margin: 18px 0 7px
+        }
+
+        .type-card p {
+            color: #667484;
+            font-size: 14px;
+            line-height: 1.8;
+            max-width: 460px
+        }
+
+        .network {
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(ellipse at 100% 0%, #fff 0, transparent 38%), #f1eee6;
+            color: #142437
+        }
+
+        .network:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(16, 38, 60, .025) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 38, 60, .025) 1px, transparent 1px);
+            background-size: 34px 34px;
+            pointer-events: none
+        }
+
+        .network .wrap {
+            position: relative
+        }
+
+        .network-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 20px;
+            flex-wrap: wrap
+        }
+
+        .network-head .lead {
+            color: #667486
+        }
+
+        .network-count {
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: #8a6b31;
+            font-weight: 800;
+            border: 1px solid #d8c99f;
+            padding: 9px 13px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, .6)
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 38px
+        }
+
+        .partner-card {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+            background: #fff;
+            color: #17283a;
+            border: 1px solid #e5e0d5;
+            border-radius: 18px;
+            box-shadow: 0 14px 36px rgba(15, 30, 45, .07);
+            transition: transform .3s, box-shadow .3s
+        }
+
+        .partner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 55px rgba(15, 30, 45, .15)
+        }
+
+        .partner-cover {
+            height: 105px;
+            position: relative;
+            background: radial-gradient(circle at 80% 20%, rgba(216, 182, 108, .35), transparent 34%), linear-gradient(120deg, #0a1b2b, #20445d)
+        }
+
+        .partner-cover:after {
+            content: "";
+            position: absolute;
+            right: 18px;
+            top: -46px;
+            width: 160px;
+            height: 160px;
+            border: 1px solid rgba(216, 182, 108, .23);
+            border-radius: 50%;
+            box-shadow: 0 0 0 18px rgba(216, 182, 108, .04), 0 0 0 42px rgba(216, 182, 108, .025)
+        }
+
+        .partner-card:nth-child(2) .partner-cover {
+            background: radial-gradient(circle at 20% 20%, rgba(216, 182, 108, .3), transparent 36%), linear-gradient(120deg, #182a3d, #526579)
+        }
+
+        .partner-card:nth-child(3) .partner-cover {
+            background: radial-gradient(circle at 80% 20%, rgba(216, 182, 108, .32), transparent 35%), linear-gradient(120deg, #142a35, #3c5c5a)
+        }
+
+        .partner-body {
+            padding: 0 23px 24px
+        }
+
+        .partner-top {
+            display: flex;
+            align-items: flex-end;
+            gap: 14px;
+            margin-top: -39px;
+            position: relative;
+            z-index: 1
+        }
+
+        .partner-logo {
+            width: 82px;
+            height: 82px;
+            flex: 0 0 82px;
+            border: 4px solid #fff;
+            border-radius: 19px;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(145deg, #10263c, #1c405b);
+            color: #e1c37b;
+            font-size: 21px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            overflow: hidden;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, .15)
+        }
+
+        .partner-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #fff;
+            padding: 7px
+        }
+
+        .partner-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 9px;
+            letter-spacing: 1px;
+            font-weight: 800;
+            color: #816329;
+            background: #f8f1df;
+            border: 1px solid #eadbb6;
+            border-radius: 30px;
+            padding: 6px 9px
+        }
+
+        .partner-status.unofficial {
+            color: #596a7a;
+            background: #eef2f5;
+            border-color: #dce3e8
+        }
+
+        .partner-card h3 {
+            font-family: Georgia, serif;
+            font-size: 22px;
+            font-weight: 500;
+            margin: 13px 0 3px
+        }
+
+        .partner-card .category {
+            font-size: 10px;
+            color: #9a783a;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 800
+        }
+
+        .partner-card p {
+            color: #687687;
+            font-size: 13px;
+            line-height: 1.8;
+            min-height: 70px;
+            margin: 15px 0 18px
+        }
+
+        .partner-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 9px;
+            padding: 12px 14px;
+            border-radius: 8px;
+            background: #10263c;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            transition: background .2s
+        }
+
+        .partner-link:hover {
+            background: #8b6d35
+        }
+
+        .partner-link span {
+            color: #e0c37b;
+            font-size: 17px
+        }
+
+        .partner-empty {
+            border: 1px dashed #c9c1af;
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            color: #7c8793;
+            font-size: 12px;
+            margin-top: 22px;
+            background: rgba(255, 255, 255, .4)
+        }
+
+        .join-banner {
+            position: relative;
+            overflow: hidden;
+            margin-top: 58px;
+            padding: 42px;
+            border: 1px solid rgba(216, 182, 108, .3);
+            border-radius: 18px;
+            background: radial-gradient(ellipse at 90% 10%, rgba(216, 182, 108, .18), transparent 35%), linear-gradient(115deg, #091a2a, #173b57);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+            box-shadow: 0 18px 42px rgba(15, 30, 45, .12)
+        }
+
+        .join-banner:after {
+            content: "✦";
+            position: absolute;
+            right: 31%;
+            top: -65px;
+            font-size: 210px;
+            color: rgba(255, 255, 255, .025);
+            pointer-events: none
+        }
+
+        .join-banner h3 {
+            font-family: Georgia, serif;
+            font-size: clamp(25px, 4vw, 36px);
+            font-weight: 500;
+            margin: 0 0 7px
+        }
+
+        .join-banner p {
+            color: #bdc9d4;
+            margin: 0;
+            font-size: 14px
+        }
+
+        .join-banner .btn {
+            white-space: nowrap;
+            position: relative;
+            z-index: 1
+        }
+
+        @media(max-width:900px) {
+            .partner-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+        }
+
+        @media(max-width:620px) {
+
+            .partner-intro,
+            .partner-grid {
+                grid-template-columns: 1fr
+            }
+
+            .partnership-hero {
+                padding: 70px 0 65px
+            }
+
+            .partnership-hero h1 {
+                letter-spacing: -1px
+            }
+
+            .join-banner {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 28px
+            }
+
+            .partner-card p {
+                min-height: 0
+            }
+
+            .network-count {
+                margin-top: 5px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="wrap nav"><a class="brand" href="index.html">NOVA<span>CREST</span> CORPORATION</a>
+        <nav class="navlinks"><a href="index.html">Home</a><a href="about.html">About</a><a
+                href="divisions.html">Divisions</a><a href="partnership.html" aria-current="page">Partnership</a><a
+                href="careers.html">Careers</a><a href="contact.html">Contact</a></nav>
+    </header>
+    <main>
+        <section class="partnership-hero">
+            <div class="wrap">
+                <div class="hero-kicker">Connect · Collaborate · Grow</div>
+                <h1>Stronger Together.<br><span>Built on Partnership.</span></h1>
+                <p>Kami membangun hubungan kolaboratif dengan perusahaan, komunitas, dan organisasi yang memiliki visi
+                    untuk tumbuh bersama serta menciptakan peluang baru.</p>
+                <div class="partner-actions"><a class="btn" href="contact.html">Ajukan Partnership ↗</a><a
+                        class="btn alt" href="#our-partners">Jelajahi Partner</a></div>
+            </div>
+        </section>
+        <section class="section light">
+            <div class="wrap">
+                <div class="eyebrow">Partnership Framework</div>
+                <h2>Two Ways to Collaborate</h2>
+                <p class="lead">Setiap kerja sama memiliki ruang dan bentuk yang dapat disesuaikan dengan kebutuhan
+                    kedua pihak.</p>
+                <div class="partner-intro">
+                    <article class="type-card">
+                        <div class="type-icon">✦</div>
+                        <h3>Official Partnership</h3>
+                        <p>Kerja sama yang telah disetujui secara formal, tercatat dalam jaringan NOVACREST, dan
+                            memiliki status mitra resmi berdasarkan kesepakatan bersama.</p>
+                    </article>
+                    <article class="type-card">
+                        <div class="type-icon">↗</div>
+                        <h3>Unofficial Partnership</h3>
+                        <p>Kolaborasi yang lebih fleksibel dan bersifat informal, tanpa status mitra resmi. Status dapat
+                            ditinjau untuk ditingkatkan melalui kesepakatan bersama.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section network" id="our-partners">
+            <div class="wrap">
+                <div class="network-head">
+                    <div>
+                        <div class="eyebrow">Our Network</div>
+                        <h2>Partners & Collaborators</h2>
+                        <p class="lead">Kenali jaringan yang berjalan bersama VALTIERA GROUP.</p>
+                    </div>
+                    <div class="network-count">OUR NETWORK · 2026</div>
+                </div>
+                <div class="partner-grid">
+                    <!-- Duplikasi .partner-card untuk menambahkan mitra. Ganti src logo, nama, kategori, deskripsi, status, dan href. -->
+                    <article class="partner-card">
+                        <div class="partner-cover"></div>
+                        <div class="partner-body">
+                            <div class="partner-top">
+                                <div class="partner-logo" aria-label="Logo contoh partner">NC</div>
+                                <div><span class="partner-status">✦ OFFICIAL PARTNER</span>
+                                    <h3>Nama Partner</h3>
+                                    <div class="category">Company / Organization</div>
+                                </div>
+                            </div>
+                            <p>Tulis deskripsi singkat mengenai perusahaan atau organisasi, bidang yang dijalankan, dan
+                                nilai kolaborasi bersama NOVACREST.</p><a class="partner-link"
+                                href="https://example.com" target="_blank" rel="noopener noreferrer">Visit Partner
+                                <span>↗</span></a>
+                        </div>
+                    </article>
+                    <article class="partner-card">
+                        <div class="partner-cover"></div>
+                        <div class="partner-body">
+                            <div class="partner-top">
+                                <div class="partner-logo" aria-label="Logo contoh partner">NP</div>
+                                <div><span class="partner-status unofficial">◇ UNOFFICIAL PARTNER</span>
+                                    <h3>Nama Partner</h3>
+                                    <div class="category">Community / Network</div>
+                                </div>
+                            </div>
+                            <p>Tambahkan ringkasan profil partner, fokus kegiatan, dan bentuk hubungan kolaborasi yang
+                                sedang dijalankan.</p><a class="partner-link" href="https://example.com" target="_blank"
+                                rel="noopener noreferrer">Visit Partner <span>↗</span></a>
+                        </div>
+                    </article>
+                    <article class="partner-card">
+                        <div class="partner-cover"></div>
+                        <div class="partner-body">
+                            <div class="partner-top">
+                                <div class="partner-logo" aria-label="Logo contoh partner">CO</div>
+                                <div><span class="partner-status">✦ OFFICIAL PARTNER</span>
+                                    <h3>Nama Partner</h3>
+                                    <div class="category">Business Partner</div>
+                                </div>
+                            </div>
+                            <p>Gunakan bagian ini untuk menampilkan profil partner lain beserta kontribusi atau bidang
+                                kerja sama yang relevan.</p><a class="partner-link" href="https://example.com"
+                                target="_blank" rel="noopener noreferrer">Visit Partner <span>↗</span></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="partner-empty">Partner baru akan ditampilkan di halaman ini setelah informasi dan kerja
+                    samanya dikonfirmasi.</div>
+                <div class="join-banner">
+                    <div>
+                        <h3>Let’s build something meaningful.</h3>
+                        <p>Terbuka untuk peluang kolaborasi dan kemitraan baru.</p>
+                    </div><a class="btn" href="contact.html">Start a Conversation ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrap">© <span data-year>2026</span> VALTIERA GROUP · Building a Stronger Tomorrow.</div>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

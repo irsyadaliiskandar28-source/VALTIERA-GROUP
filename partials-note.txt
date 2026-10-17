@@ -1,0 +1,2 @@
+Setiap halaman adalah file HTML terpisah. Semua halaman menggunakan assets/style.css dan assets/script.js.
+Ubah email novacrest@example.com menjadi email perusahaan yang aktif.
